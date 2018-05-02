@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.huaweisoft.training.dao.EmployeeMapper" >
+  
+  
+  <select id="selectByExample111" resultMap="com.huaweisoft.training.dto.EmployeeExt" parameterType="com.huaweisoft.training.entity.EmployeeExample" >
+    SELECT a.*, e.`name` from attendance a LEFT JOIN employee e on a.employee_id =e.id
+  </select>
+  
+</mapper>
